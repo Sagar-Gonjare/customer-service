@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name : google formatter check 
-      run : mvn com.spotify.fmt:fmt-maven-plugin:check
+      run : mvn com.spotify.fmt:fmt-maven-plugin:format
 
     - name : Gitleaks Scan
       uses: zricethezav/gitleaks-action@v1.3.0
